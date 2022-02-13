@@ -5,19 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>С днём святого Валентина!</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
 	<div class="container">
-		<div class="flip-container" onclick="this.classList.toggle('hovered');">
-		<div class="flipper">
+		<h2>Ты будешь моей валентинкой?</h2>
+		<div class="flip-container">
+		<div class="flipper" id="flipperId">
 		<div class="front">
 		<!-- front content -->
 		</div>
 		<div class="back">
-		<!-- back content -->
+			<span>
+				С днём святого Валентина!
+				<br>
+				От: Ильи
+				<br>
+				Для: Сони
+			</span>
 		</div>
 		</div>
 		</div>
+		<div class="button" id="button">Да</div>
 	</div>
+<script lang="javascript" src="index.js"></script>
 </body>
 </html>

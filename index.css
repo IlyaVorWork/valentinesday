@@ -2,10 +2,6 @@
 	perspective: 1000;
 }
  
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-	transform: rotateY(-180deg);
-}
- 
 .flip-container, .front, .back {
 	width: 300px;
 	height: 300px;
@@ -31,12 +27,46 @@
 .back {
 	background-image: url('./images/back.png');
 	transform: rotateY(180deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+}
+
+span{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.hovered{
+	transform: rotateY(-180deg);
+}
+
+.button{
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	width: 75px;
+	height: 75px;
+	border-radius: 50px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 40px;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
